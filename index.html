@@ -1,0 +1,159 @@
+<!doctype html>
+<html class="no-js" lang="en"  >
+<head>
+	<title>B Please</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/foundation-min.css">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="icons/foundation-icons.css" />
+
+
+	<script>
+		jQuery(document).ready({
+			jQuery(document).foundation();
+		});
+	</script>
+</head>
+
+<body dir="rtl">
+	
+
+	<div data-sticky-container="" class="sticky-container">
+		<div class="sticky is-stuck is-at-top">
+			<div class="top-bar" data-sticky>
+				<div class="top-bar-right">
+					<ul class="dropdown menu" data-dropdown-menu>
+						<li class="menu-text"></li>
+						<li class="nav-link" id="fourth">
+							<a href="#first">من نحن - General</a>
+							<ul class="menu vertical">
+								<li><a href="#">واحد</a></li>
+								<li><a href="#">اثنين</a></li>
+								<li><a href="#">ثلاثة</a></li>
+							</ul>
+						</li>
+						<li class="nav-link"><a href="#second">موقع - Website</a></li>
+						<li class="nav-link"><a href="#third">آبل - Apple</a></li>
+						<li class="nav-link"><a href="#fourth">أندرويد - Android</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="side-bar"></div> 
+
+	<div class="row fullScreen" id="first">
+		<div class="large-2 large-offset-0 small-3 columns">
+			<div class="third-scroll--img">
+				<i class="fi-monitor large-icon"></i>
+			</div>
+		</div>
+		<div class="service-description large-9 large-offset-0 small-12 columns">
+			نقدم فى شركة تو ام خدمة تصميم وبرمجة تطبيقات الجوال الذكية اندرويد و ايفون للشركات والأفراد والمؤسسات بجودة عالية ولوحة تحكم لكل تطبيق حسب الاحتياج كما نقوم بعمل تطبيقات احترافية للجوال للأنظمة والشركات بداية من التصميم المتميز المناسب للفكرة وانتهاء ببرمجة قوية وأداء عالي مع الاهتمام بالتحديثات المستمرة للحفاظ على نجاح التطبيق بعد رفعه على سوق جوجل أو الأب ستور ي 
+		</div>
+	</div>	
+
+	<div class="row fullScreen" id="second">
+		<div class="service-description large-9 large-offset-0 small-9 columns">
+			نقدم فى شركة تو ام خدمة تصميم وبرمجة تطبيقات الجوال الذكية اندرويد و ايفون للشركات والأفراد والمؤسسات بجودة عالية ولوحة تحكم لكل تطبيق حسب الاحتياج كما نقوم بعمل تطبيقات احترافية للجوال للأنظمة والشركات بداية من التصميم المتميز المناسب للفكرة وانتهاء ببرمجة قوية وأداء عالي مع الاهتمام بالتحديثات المستمرة للحفاظ على نجاح التطبيق بعد رفعه على سوق جوجل أو الأب ستور ي 
+		</div>
+		<div class="service-description large-3 large-offset-0 small-3 columns">
+			<div class="third-scroll--img">
+				<i class="fi-mobile large-icon" ></i>
+			</div>
+		</div>
+	</div>	
+
+	<div class="row fullScreen" id="third">
+		<div class="service-description large-9 large-offset-0 small-9 columns">
+			نقدم فى شركة تو ام خدمة تصميم وبرمجة تطبيقات الجوال الذكية اندرويد و ايفون للشركات والأفراد والمؤسسات بجودة عالية ولوحة تحكم لكل تطبيق حسب الاحتياج كما نقوم بعمل تطبيقات احترافية للجوال للأنظمة والشركات بداية من التصميم المتميز المناسب للفكرة وانتهاء ببرمجة قوية وأداء عالي مع الاهتمام بالتحديثات المستمرة للحفاظ على نجاح التطبيق بعد رفعه على سوق جوجل أو الأب ستور ي 
+		</div>
+		<div class=" large-3 large-offset-0 small-3 columns">
+			<div class="third-scroll--img">
+				<i class="fi-mail large-icon" ></i>
+			</div>
+		</div>
+	</div>	
+ 
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/what-input.min.js"></script>
+	<script src="js/foundation.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<script>
+	
+    var scrollSize = $(window).height();
+   	var targetSection = 0;
+	var maxSections = 3;
+
+
+    $(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+
+        break;
+
+        case 38: // up
+        	if(targetSection > 0) {
+        		targetSection--;
+        		$('html, body').animate({scrollTop: scrollSize*targetSection}, "slow");
+        	}
+        break;
+
+        case 39: // right
+        break;
+
+        case 40: // down
+       		if(targetSection < maxSections) {
+       				targetSection++;
+        			$('html, body').animate({scrollTop: scrollSize*targetSection}, "slow");
+        		}
+        break;
+
+        default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+
+    window.console&&console.log("current section: " + targetSection)
+});
+
+
+   //    $(window).scroll(function(event){
+   //     //       if(Math.round($(window).scrollTop() / scrollMultiplier) != scrollTarget){
+   //     //       	$('html, body').animate({scrollTop: scrollTarget*scrollMultiplier}, "slow");
+   //     //       }
+   //     //       else{
+   //     // //       	var currentScroll = $(window).scrollTop();
+			//     // // var scrollMultiplier = $('#first').prop("scrollHeight");
+			//     // // var scrollTarget = Math.round(currentScroll / scrollMultiplier);
+   //     //       }
+
+   //     var st = $(this).scrollTop();
+   //     if (st < lastScrollTop){
+   //     		window.console&&console.log("bottom!");
+
+   //     		if(scrollMultiplier < maxSections) scrollMultiplier++;
+   //     } else {
+   //     		window.console&&console.log("up!");
+   //     		if(scrollMultiplier > 1) scrollMultiplier--;
+   //     }
+
+   //     $('html, body').animate({scrollTop: scrollSize*scrollMultiplier}, "slow");
+
+   //     lastScrollTop = $(this).scrollTop();
+
+   //     window.console&&console.log("Multi: " + scrollMultiplier)
+   // });
+
+
+	</script>
+</body>
+</html>

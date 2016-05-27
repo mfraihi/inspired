@@ -1,0 +1,127 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+
+
+
+
+
+
+/*
+   ===
+   ARABIC FONTS
+   ===
+*/
+@font-face {
+  font-family: 'ITCHandelGothicArabicMed';
+  src: url("../fonts/arabic/hinted-ITCHandelGothicArabic-Md.eot");
+  src: local("ITC Handel Gothic Arabic Medium"), local("ITCHandelGothicArabic-Md"), url("../fonts/arabic/hinted-ITCHandelGothicArabic-Md.eot?#iefix") format("embedded-opentype"), url("../fonts/arabic/hinted-ITCHandelGothicArabic-Md.woff2") format("woff2"), url("../fonts/arabic/hinted-ITCHandelGothicArabic-Md.ttf") format("truetype"), url("../fonts/arabic/hinted-ITCHandelGothicArabic-Md.svg#ITCHandelGothicArabic-Md") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'ITCHandelGothicArabicBold';
+  src: url("../fonts/arabic/hinted-ITCHandelGothicArabic-Bold.eot");
+  src: local("ITC Handel Gothic Arabic Bold"), local("ITCHandelGothicArabic-Bold"), url("../fonts/arabic/arabic/hinted-ITCHandelGothicArabic-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/arabic/hinted-ITCHandelGothicArabic-Bold.woff2") format("woff2"), url("../fonts/arabic/hinted-ITCHandelGothicArabic-Bold.ttf") format("truetype"), url("../fonts/arabic/hinted-ITCHandelGothicArabic-Bold.svg#ITCHandelGothicArabic-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+/*
+   ===
+   TYPO
+   ===
+*/
+* {
+  font-family: 'ITCHandelGothicArabicMed' !important;
+  letter-spacing: 0 !important; }
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+
+body{
+	height: 100%;
+  font-family: 'ITCHandelGothicArabicMed' !important;
+    text-align: center;
+}
+
+body a{
+	color: gray;
+}
+
+.top-bar, .top-bar ul{
+	background: #ffffff;
+}
+
+.top-bar{
+
+}
+
+.fullScreen {	
+ 	margin-right: 10%;
+	max-width: initial;
+	background: #ffffff;
+    font-size: 1.6em;
+    z-index: -100;
+    text-align: justify;
+	height: 100%;
+	/*min-height: 100%; */ /* Fallback for browsers do NOT support vh unit */
+    /*min-height: 100vh;*/ /* These two lines are counted as one :-)*/   	
+	display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+}
+
+.service-description{
+/*	border-right: 1px dotted black;
+*/}
+ 
+.sticky{
+	width: 100%;
+}
+
+.third-scroll--img{
+	text-align: center;
+	position: relative;
+*/}
+
+.large-icon{
+	font-size: 150px;
+}
+ 
+.side-bar {
+	position: fixed;
+	background: blue;
+    height: 100%;
+    width: 10%;
+    z-index: 3;
+    background: url('images/sidebar-diagram2.png');
+    background-size: contain;
+}
+
+@media only screen and (max-width: 40em) {
+.top-bar, .top-bar ul{
+	background: #ffffff;
+	font-size: .8em;
+}
+.fullScreen{
+	font-size: 0.9em;
+	 
+}
+
+.third-scroll--img {}
+
+.large-icon{
+	font-size: 50px;
+}
+	} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
